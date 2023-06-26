@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h-p-90 {
+    height: 90vh;
+}
+.h-p-80 {
+    height: 80vh;
+}
+.h-p-70 {
+    height: 70vh;
+}
+.h-p-60 {
+    height: 60vh;
+}
+.h-p-50 {
+    height: 50vh;
+}
+.h-p-40 {
+    height: 40vh;
+}
+.h-p-30 {
+    height: 30vh;
+}
+.h-p-20 {
+    height: 20vh;
+}
+.h-p-10 {
+    height: 10vh;
+}
+
+.w-p-90 {
+    width: 90vw;
+}
+.w-p-80 {
+    width: 80vw;
+}
+.w-p-70 {
+    width: 70vw;
+}
+.w-p-60 {
+    width: 60vw;
+}
+.w-p-50 {
+    width: 50vw;
+}
+.w-p-40 {
+    width: 40vw;
+}
+.w-p-30 {
+    width: 30vw;
+}
+.w-p-20 {
+    width: 20vw;
+}
+.w-p-10 {
+    width: 10vw;
+}

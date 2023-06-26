@@ -2,7 +2,7 @@
   <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a @click="$router.push('/')" class="-m-1.5 p-1.5 cursor-pointer">
           <span class="sr-only">Your Company</span>
           Arif Mehniyar
         </a>
@@ -42,7 +42,7 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="https://gist.github.com/mehniyarif" class="block font-semibold text-gray-900">
+                  <a href="https://gist.github.com/mehniyarif" target="_blank" class="block font-semibold text-gray-900 cursor-pointer">
                     Gist
                     <span class="absolute inset-0"></span>
                   </a>
@@ -55,7 +55,7 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="https://github.com/mehniyarif?tab=repositories" class="block font-semibold text-gray-900">
+                  <a href="https://github.com/mehniyarif?tab=repositories" target="_blank" class="block font-semibold text-gray-900 cursor-pointer">
                     Github
                     <span class="absolute inset-0"></span>
                   </a>
@@ -68,7 +68,7 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="https://codepen.io/mehniyar" class="block font-semibold text-gray-900">
+                  <a href="https://codepen.io/mehniyar" target="_blank" class="block font-semibold text-gray-900 cursor-pointer">
                     Codepen
                     <span class="absolute inset-0"></span>
                   </a>
@@ -85,11 +85,11 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="https://www.linkedin.com/in/mehniyarif/" class="block font-semibold text-gray-900">
+                  <a href="https://www.linkedin.com/in/mehniyarif/" target="_blank" class="block font-semibold text-gray-900 cursor-pointer">
                     Linkendin
                     <span class="absolute inset-0"></span>
                   </a>
-                  <p class="mt-1 text-gray-600">My professional job profile</p>
+                  <p class="mt-1 text-gray-600">professional job profile</p>
                 </div>
               </div>
               <div @click="$router.push('/technologies')" class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
@@ -98,7 +98,7 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="#" class="block font-semibold text-gray-900">
+                  <a href="#" class="block font-semibold text-gray-900 cursor-pointer">
                     Technologies
                     <span class="absolute inset-0"></span>
                   </a>
@@ -107,13 +107,13 @@
               </div>
             </div>
             <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-              <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+              <a href="#" class="flex items-center justify-center cursor-pointer gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                 <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clip-rule="evenodd" />
                 </svg>
                 Watch me
               </a>
-              <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+              <a href="#" class="flex items-center justify-center cursor-pointer gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
 
                 Contact me
@@ -122,9 +122,9 @@
           </div>
         </div>
 
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Resumes</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">My Projects</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        <a @click="$router.push('/resume')" class="text-sm font-semibold leading-6 cursor-pointer text-gray-900">Resumes</a>
+        <a @click="$router.push('/project')" class="text-sm font-semibold leading-6 cursor-pointer text-gray-900">Projects</a>
+        <a @click="$router.push('/skill')" class="text-sm font-semibold leading-6 cursor-pointer text-gray-900">Skills</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <span class="text-sm font-semibold leading-6 text-gray-900">&nbsp;</span>
@@ -136,8 +136,8 @@
       <div class="fixed inset-0 z-10"></div>
       <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
+          <a @click="$router.push('/')" class="-m-1.5 p-1.5 cursor-pointer">
+            <span class="sr-only"></span>
             Arif Mehniyar
           </a>
           <button type="button" @click="closeSidebar" class="-m-2.5 rounded-md p-2.5 text-gray-700">
@@ -164,21 +164,21 @@
                 </button>
                 <!-- 'Product' sub-menu, show/hide based on menu state. -->
                 <div class="mt-2 space-y-2" id="disclosure-1" v-if="isOpenProfile">
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gist</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Github</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Codepen</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Linkedin</a>
-                  <a @click="$router.push('/technologies')" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Technologies</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch me</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact me</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gist</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Github</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Codepen</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Linkedin</a>
+                  <a @click="$router.push('/technologies')" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Technologies</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch me</a>
+                  <a href="#" class="block rounded-lg cursor-pointer py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact me</a>
                 </div>
               </div>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Resumes</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">My Projects</a>
-              <a @click="$router.push('/technologies')" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Technologies</a>
+              <a @click="$router.push('/resume')" class="-mx-3 block rounded-lg cursor-pointer px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Resumes</a>
+              <a @click="$router.push('/project')" class="-mx-3 block rounded-lg cursor-pointer px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
+              <a @click="$router.push('/skill')" class="-mx-3 block rounded-lg cursor-pointer px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skills</a>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">&nbsp;</a>
+              <a href="#" class="-mx-3 block rounded-lg cursor-pointer px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">&nbsp;</a>
             </div>
           </div>
         </div>
